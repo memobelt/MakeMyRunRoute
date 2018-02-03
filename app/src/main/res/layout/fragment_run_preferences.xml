@@ -1,0 +1,45 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/frameLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="memo.makemyrunroute.model.RunPreferencesFragment"
+    >
+
+    <EditText
+        android:id="@+id/distanceAmountEdittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/run_preference_margin"
+        android:hint="@string/hello_blank_fragment"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/distanceTypeTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/run_preference_margin"
+        android:hint="@string/mile"
+        app:layout_constraintBottom_toBottomOf="@id/distanceAmountEdittext"
+        app:layout_constraintStart_toEndOf="@id/distanceAmountEdittext"
+        app:layout_constraintTop_toTopOf="@id/distanceAmountEdittext"
+        />
+
+    <Switch
+        android:id="@+id/distanceTypeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/run_preference_margin"
+        android:theme="@style/SwitchColor"
+        app:layout_constraintBottom_toBottomOf="@id/distanceAmountEdittext"
+        app:layout_constraintStart_toEndOf="@id/distanceTypeTextview"
+        app:layout_constraintTop_toTopOf="@id/distanceAmountEdittext"
+        />
+
+</android.support.constraint.ConstraintLayout>
