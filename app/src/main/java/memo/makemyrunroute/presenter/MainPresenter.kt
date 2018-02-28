@@ -1,7 +1,6 @@
 package memo.makemyrunroute.presenter
 
-class MainPresenter(view: MainPresenter.View) : BasePresenter() {
-    var view = view
+class MainPresenter(private var view: MainPresenter.View) : BasePresenter() {
 
     interface View {
         fun handleButtonClicked()
